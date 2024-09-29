@@ -1,0 +1,77 @@
+.TH "ext_ascii" 7 2024-09-27
+.SH NAME
+.PP
+.B ext_ascii
+- Unicode equivalents of extended ASCII block characters
+.SH DESCRIPTION
+.PP
+Beyond the standard 7-bit ASCII codes are a set of characters that
+have been used to draw blocks and boxes on text-based consoles like
+terminal emulators.
+These drawing symbols from
+.B Code page 437
+have Unicode equivalents to make them available for console-based
+output.
+.PP
+The following table contains the line- and block-drawing subset
+of characters.
+.PP
+.UR https://en.wikipedia.org/wiki/Box-drawing_characters
+.UE
+was used as a reference for this document.
+
+
+
+.SH HELPFUL HINT
+.PP
+In a Linux terminal, enter Unicode characters by pressing
+Control-Shift-u, followed by the Unicode value, then press
+ENTER.
+.SH TABLES
+.SS Line Drawing Table
+.TS
+tab(|);
+r2 | r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+l | l  l  l  l  l  l  l  l  l  l  l  l  l  l  l  l.
+\ |0|1|2|3|4|5|6|7|8|9|A|B|C|D|E|F
+U+250x| \[u2500]|\[u2501]|\[u2502]|\[u2503]|\[u2504]|\[u2505]|\[u2506]|\[u2507]|\
+\[u2508]|\[u2509]|\[u250A]|\[u250B]|\[u250C]|\[u250D]|\[u250E]|\[u250F]
+
+U+251x| \[u2510]|\[u2511]|\[u2512]|\[u2513]|\[u2514]|\[u2515]|\[u2516]|\[u2517]|\
+\[u2518]|\[u2519]|\[u251A]|\[u251B]|\[u251C]|\[u251D]|\[u251E]|\[u251F]
+
+U+252x| \[u2520]|\[u2521]|\[u2522]|\[u2523]|\[u2524]|\[u2525]|\[u2526]|\[u2527]|\
+\[u2528]|\[u2529]|\[u252A]|\[u252B]|\[u252C]|\[u252D]|\[u252E]|\[u252F]
+
+U+253x| \[u2530]|\[u2531]|\[u2532]|\[u2533]|\[u2534]|\[u2535]|\[u2536]|\[u2537]|\
+\[u2538]|\[u2539]|\[u253A]|\[u253B]|\[u253C]|\[u253D]|\[u253E]|\[u253F]
+
+U+254x| \[u2540]|\[u2541]|\[u2542]|\[u2543]|\[u2544]|\[u2545]|\[u2546]|\[u2547]|\
+\[u2548]|\[u2549]|\[u254A]|\[u254B]|\[u254C]|\[u254D]|\[u254E]|\[u254F]
+
+U+255x| \[u2550]|\[u2551]|\[u2552]|\[u2553]|\[u2554]|\[u2555]|\[u2556]|\[u2557]|\
+\[u2558]|\[u2559]|\[u255A]|\[u255B]|\[u255C]|\[u255D]|\[u255E]|\[u255F]
+
+U+256x| \[u2560]|\[u2561]|\[u2562]|\[u2563]|\[u2564]|\[u2565]|\[u2566]|\[u2567]|\
+\[u2568]|\[u2569]|\[u256A]|\[u256B]|\[u256C]|\[u256D]|\[u256E]|\[u256F]
+
+U+257x| \[u2570]|\[u2571]|\[u2572]|\[u2573]|\[u2574]|\[u2575]|\[u2576]|\[u2577]|\
+\[u2578]|\[u2579]|\[u257A]|\[u257B]|\[u257C]|\[u257D]|\[u257E]|\[u257F]
+
+.TE
+.SS Block Drawing Table
+.TS
+tab(|);
+r2 | r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r2 r
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+l  |  l  l  l  l  l  l  l  l  l  l  l  l  l  l  l  l.
+\ |0|1|2|3|4|5|6|7|8|9|A|B|C|D|E|F
+U+258x| \[u2580]|\[u2581]|\[u2582]|\[u2583]|\[u2584]|\[u2585]|\[u2586]|\[u2587]|\
+\[u2588]|\[u2589]|\[u258A]|\[u258B]|\[u258C]|\[u258D]|\[u258E]|\[u258F]
+
+U+259x| \[u2590]|\[u2591]|\[u2592]|\[u2593]|\[u2594]|\[u2595]|\[u2596]|\[u2597]|\
+\[u2598]|\[u2599]|\[u259A]|\[u259B]|\[u259C]|\[u259D]|\[u259E]|\[u259F]
+.TE
+.PP
+
